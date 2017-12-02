@@ -1,7 +1,15 @@
 # ComputerArchitecture
 
-## Part 1
+## Finished
 
-* Register File 
+* Register File
+
+* Sign Extender
+
+* 2x1 Multiplexer
+
+## To do
 
 * Instruction Decode
+
+* Control Signals
