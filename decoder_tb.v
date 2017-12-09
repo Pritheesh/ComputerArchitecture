@@ -23,7 +23,7 @@ module decoder_tb;
    reg [8*7:0] NameArray [0:39];
    integer i;
 
-   Decoder u1(instr, clk, reset, op, rs, rt, rd, shamt, funct, imm, target, RegA, RegB, Imm, RegDst, RegWrite, Target);
+   decoder u1(instr, clk, reset, op, rs, rt, rd, shamt, funct, imm, target, RegA, RegB, Imm, RegDst, RegWrite, Target);
 
    initial
    begin
@@ -82,7 +82,7 @@ module decoder_tb;
 
    initial
    begin
-   for(i=0; i<=39; i=i+1) begin
+   for(i=0; i<39; i=i+1) begin
    TempInstr = InstrArray[i];
    instr = TempInstr;
    #1;
@@ -93,7 +93,7 @@ module decoder_tb;
    // i, NameArray[i], InstrArray[i], instr, clk, reset, op, rs, rt, rd, shamt, funct, imm, target, RegA, RegB, Imm, RegDst, RegWrite, Target);
 
    initial $monitor("%d, %s:, %h, instr=%b, op=%b, rs=%b, rt=%b, rd=%b, shamt=%b, funct=%b, Imm=%b, RegDst=%b, RegWrite=%b, Target=%b",
-   i, NameArray[i], InstrArray[i], instr, op, rs, rt, rd, shamt, funct, imm, Imm, RegDst, RegWrite, Target);
+   i, NameArray[i], InstrArray[i], instr, op, rs, rt, rd, shamt, funct, Imm, RegDst, RegWrite, Target);
 
    initial #50 $stop;
 
