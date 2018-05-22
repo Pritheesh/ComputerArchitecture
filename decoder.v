@@ -1,7 +1,6 @@
-module decoder(instr, clk, rest, op, rs, rt, rd, shamt, funct, imm, target, RegA, RegB, Imm,RegDst, RegWrite,Target);
+module decoder(instr,op, rs, rt, rd, shamt, funct, imm, target, RegA, RegB, Imm,RegDst, RegWrite,Target);
 
-	input clk;
-	input rest;
+
 	input [31:0] instr;
 
 	output [5:0] op;
