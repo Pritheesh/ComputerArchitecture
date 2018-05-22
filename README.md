@@ -1,14 +1,12 @@
-# ComputerArchitecture
+# Computer Architecture Project
 
-## Finished
+## Implemented Modules
 
 * Register File
 
 * Sign Extender
 
 * 2x1 Multiplexer
-
-## To do
 
 * Instruction Decode
 
